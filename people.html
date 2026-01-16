@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaders - Harvest Church</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Shared custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    /* Background logo styling */
+    body {
+      background: url("images/harvest_logo.png") no-repeat center center fixed;
+      background-size: 300px; /* adjust size of logo */
+      background-color: #111; /* fallback dark background */
+    }
+
+    /* Overlay to soften background */
+    .overlay {
+      background-color: rgba(0,0,0,0.7);
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+
+    /* Leader cards polish */
+    .leader-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .leader-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    }
+    .leader-card img {
+      height: 350px;
+      object-fit: cover;
+      border-radius: 6px 6px 0 0;
+    }
+  </style>
+</head>
+<body class="text-light d-flex flex-column min-vh-100">
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Harvest Church</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="people.html">Leaders</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="container py-5 flex-grow-1">
+    <div class="text-center mb-5">
+      <h2 class="display-5">Our Leaders</h2>
+      <p class="lead">Meet Apostle Malesela and our dedicated leadership team who serve with vision and passion.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Leader 1 -->
+      <div class="col-md-3">
+        <div class="card bg-dark text-light leader-card">
+          <img src="images/leaders/DO.jpeg" alt="Apostle D&P Malesela" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Apostle D&P Malesela</h5>
+            <p class="card-text">Founder & Senior Pastor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 2 -->
+      <div class="col-md-3">
+        <div class="card bg-dark text-light leader-card">
+          <img src="images/leaders/Mrs Apostle P.S Malesela.jpeg" alt="Mrs Apostle P.S Malesela" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mrs Apostle P.S Malesela</h5>
+            <p class="card-text">Co-Founder & Pastor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 3 -->
+      <div class="col-md-3">
+        <div class="card bg-dark text-light leader-card">
+          <img src="images/leaders/Mhlanga.jpeg" alt="Minister A.J Mhlanga" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Minister A.J Mhlanga</h5>
+            <p class="card-text">Men’s Ministry Leader</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 4 -->
+      <div class="col-md-3">
+        <div class="card bg-dark text-light leader-card">
+          <img src="images/leaders/MrsDlamini.jpeg" alt="Mrs Dlamini" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mrs N Dlamini</h5>
+            <p class="card-text">Evangelist Ministry</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Leader 5 -->
+      <div class="col-md-3">
+        <div class="card bg-dark text-light leader-card">
+          <img src="images/leaders/evagelist S Mphuthi.jpeg" alt="Evangelist S Mphuthi" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Evangelist S Mphuthi</h5>
+            <p class="card-text">Evangelist Ministry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-light text-center py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h6>Quick Links</h6>
+          <a href="about.html" class="text-light text-decoration-none">About Us</a>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <p class="mb-1">&copy; 2025 Harvest Assemblies of Christ Global Church</p>
+          <p class="small">All Rights Reserved</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Follow Us</h6>
+          <a href="https://facebook.com" target="_blank" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="text-light me-3"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com/@harvestchurchmusic" target="_blank" class="text-light"><i class="bi bi-music-note-beamed"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

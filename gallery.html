@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Harvest Church</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css">
+  <!-- Shared custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* Masonry-style gallery like Google Photos */
+    .gallery {
+      column-count: 4;       /* number of columns */
+      column-gap: 1rem;      /* spacing between columns */
+    }
+    .gallery-item {
+      break-inside: avoid;   /* prevent image breaks */
+      margin-bottom: 1rem;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .gallery { column-count: 3; }
+    }
+    @media (max-width: 768px) {
+      .gallery { column-count: 2; }
+    }
+    @media (max-width: 576px) {
+      .gallery { column-count: 1; }
+    }
+  </style>
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Harvest Church</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="people.html">Leaders</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="container py-5 flex-grow-1">
+    <h2 class="text-center mb-4">Church Gallery</h2>
+    <p class="text-center mb-5">A glimpse into our events, worship, and special moments together.</p>
+
+    <div class="row g-4">
+      <!-- Gallery Item -->
+      <div class="col-md-4">
+        <a href="images/events/conference.jpg" data-lightbox="church-gallery" data-title="Annual Conference">
+          <img src="images/moments/youth40.jpeg" class="img-fluid rounded shadow" alt="Annual Conference">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/worship.jpg" data-lightbox="church-gallery" data-title="Worship Service">
+          <img src="images/moments/youth3.jpeg" class="img-fluid rounded shadow" alt="Worship Service">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth1.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth2.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth44.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth5.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth55.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth50.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth60.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth51.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth52.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth53.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth54.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth55.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth56.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth44.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth45.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth41.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth46.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth47.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth48.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/youth49.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/omama.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/omama2.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/church.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/baptism.jpg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/church2.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth40.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/the_dlamini_family.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth40.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/church pic.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth40.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/church pic2.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth40.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/church pic3.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="images/moments/youth40.jpeg" data-lightbox="church-gallery" data-title="Baptism Ceremony">
+          <img src="images/moments/Warship team.jpeg" class="img-fluid rounded shadow" alt="Baptism Ceremony">
+        </a>
+      </div>
+
+
+      <!-- Add more images here -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-light text-center py-4 mt-auto">
+    <p>&copy; 2025 Harvest Assemblies of Christ Global Church. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+</body>
+</html>
